@@ -24,7 +24,7 @@ export default function Navbar() {
 
         {/* Center - Links (hidden on mobile) */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#" className="text-white hover:text-gray-300 transition-colors">جوهرنا</a>
+          <a href="/packages" className="text-white hover:text-gray-300 transition-colors">الباقات</a>
           <a href="/experience" className="text-white hover:text-gray-300 transition-colors">التجربة</a>
           <a href="#" className="text-white hover:text-gray-300 transition-colors">عن ريلاكس هيل</a>
           <a href="#" className="text-white hover:text-gray-300 transition-colors">العلاجات</a>
@@ -57,7 +57,7 @@ export default function Navbar() {
             <a href="#" className="text-white hover:text-gray-300 transition-colors">العلاجات</a>
             <a href="#" className="text-white hover:text-gray-300 transition-colors">عن ريلاكس هيل</a>
             <a href="/experience" className="text-white hover:text-gray-300 transition-colors">التجربة</a>
-            <a href="#" className="text-white hover:text-gray-300 transition-colors">جوهرنا</a>
+            <a href="/packages" className="text-white hover:text-gray-300 transition-colors">الباقات</a>
             <Button icon={
               <div className="flex items-center justify-center w-8 h-8 rounded-full" style={{ backgroundColor: 'rgba(150, 215, 78, 1)' }}>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-black" viewBox="0 0 20 20" fill="currentColor">

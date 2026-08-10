@@ -1,0 +1,205 @@
+'use client'
+
+export default function PackagesPage() {
+  return (
+    <div dir="rtl" className="overflow-hidden">
+
+      {/* Section 1 - Hero fullscreen dark bg */}
+      <section
+        className="relative w-screen -mx-[calc((100vw-100%)/2)] min-h-screen flex flex-col justify-between overflow-hidden"
+        style={{background: '#0d1a0a'}}
+      >
+        <img
+          src="/imag/THERAPEUTIC TOUCH.png"
+          alt="background"
+          className="absolute inset-0 w-full h-full object-cover opacity-50"
+        />
+        <div className="absolute inset-0" style={{background: 'linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(5,15,3,0.75) 100%)'}} />
+
+        {/* Circles decoration */}
+        <div className="absolute right-1/3 top-1/2 -translate-y-1/2 w-96 h-96 rounded-full border border-green-500/25 pointer-events-none" />
+        <div className="absolute right-1/3 top-1/2 -translate-y-1/2 w-60 h-60 rounded-full border border-green-500/20 pointer-events-none" />
+        <div className="absolute right-1/3 top-1/2 -translate-y-1/2 w-[520px] h-[520px] rounded-full border border-green-500/10 pointer-events-none" />
+
+        {/* Top labels */}
+        <div className="relative z-10 flex items-center justify-between px-8 md:px-16 pt-28">
+          <p className="text-xs font-bold tracking-widest uppercase" style={{color: 'rgba(150, 215, 78, 1)'}}>
+            CURATED RECOVERY / 04 PACKAGES
+          </p>
+          <p className="text-xs font-bold tracking-widest" style={{color: 'rgba(150, 215, 78, 1)'}}>
+            03 — 06
+          </p>
+        </div>
+
+        {/* Heading left aligned */}
+        <div className="relative z-10 flex flex-col items-start justify-center flex-1 px-8 md:px-16">
+          <h1 className="text-white font-black leading-tight text-left" style={{fontSize: 'clamp(3.5rem, 8vw, 7rem)'}}>
+            تركيبات مدروسة
+          </h1>
+          <h1 className="font-black leading-tight text-left" style={{fontSize: 'clamp(3.5rem, 8vw, 7rem)', color: 'rgba(150, 215, 78, 1)'}}>
+            لإيقاعك.
+          </h1>
+        </div>
+
+        {/* Bottom description */}
+        <div className="relative z-10 px-8 md:px-16 pb-12 flex justify-start">
+          <p className="text-gray-400 text-sm text-left max-w-sm leading-relaxed">
+            أربع باقات تجمع تقنيات العناية في مسارات متكاملة تساعدك على اختيار التجربة التي تناسب هدفك.
+          </p>
+        </div>
+      </section>
+
+      {/* Section 2 - Light bg + 4 package cards */}
+      <section style={{backgroundColor: 'hsla(60, 16%, 94%, 1)'}} className="px-8 md:px-16 py-20">
+        {/* Label + heading */}
+        <div className="flex items-center gap-2 mb-6 justify-start">
+          <span className="w-2 h-2 rounded-full" style={{backgroundColor: 'rgba(150, 215, 78, 1)'}}></span>
+          <span className="text-black text-xs font-bold">باقات ريلاكس هيل</span>
+        </div>
+        <h2 className="text-black font-black leading-tight mb-2 text-right" style={{fontSize: 'clamp(2.5rem, 6vw, 5rem)'}}>
+          كل باقة، بداية
+        </h2>
+        <h2 className="font-black leading-tight mb-12 text-right" style={{fontSize: 'clamp(2.5rem, 6vw, 5rem)', color: 'rgba(150, 215, 78, 1)'}}>
+          مختلفة.
+        </h2>
+
+        {/* 2x2 grid cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {[
+            {
+              num: '01',
+              title: 'باقة الأداء الرياضي',
+              desc: 'مزيج متطور بين التدليك الرياضي العميق والتقنية التايلاندية وكؤوس الهواء لمرونة العضلات وتفكيك التكتلات العضلية الشديدة',
+            },
+            {
+              num: '02',
+              title: 'باقة المرونة والراحة العميقة',
+              desc: 'تدليك عميق متقن للأنسجة (مايوفيشيال) مع إطالات علاجية وتحرير العقد العضلية لإعادة التوازن للجسم والشعور بالخفة التامة',
+            },
+            {
+              num: '03',
+              title: 'باقة الانطلاق والحيوية',
+              desc: 'جلسة تدليك مخصصة بالتقنية الجافة (كؤوس الهواء) لتحفيز الدورة الدموية، رفع كفاءة العضلات، وتحرير الجسم لأقصى أداء',
+            },
+            {
+              num: '04',
+              title: 'باقة التجدد والاستشفاء',
+              desc: 'جلسة متكاملة لإنعاش العضلات وتسريع الاستشفاء باستخدام التباين الحراري (الحرارة والبرودة المتبادلة) مع مسدس التدليك الاحترافي لفك الإجهاد',
+            },
+          ].map((pkg) => (
+            <div
+              key={pkg.num}
+              className="relative bg-black rounded-xl overflow-hidden flex flex-col justify-between p-8 group cursor-pointer transition-all duration-500"
+              style={{minHeight: '320px'}}
+            >
+              {/* Hover image overlay */}
+              <img
+                src="/imag/BEFORE TRAINING.png"
+                alt=""
+                className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-30 transition-opacity duration-500"
+              />
+
+              {/* Circle decoration */}
+              <div className="absolute left-4 bottom-4 w-48 h-48 rounded-full border border-green-500/15 pointer-events-none" />
+              <div className="absolute left-4 bottom-4 w-32 h-32 rounded-full border border-green-500/10 pointer-events-none" />
+
+              {/* Top row */}
+              <div className="relative z-10 flex justify-between items-start">
+                <span className="text-xs font-bold" style={{color: 'rgba(150, 215, 78, 1)'}}>+</span>
+                <span className="text-xs font-bold" style={{color: 'rgba(150, 215, 78, 1)'}}>{pkg.num}</span>
+              </div>
+
+              {/* Content */}
+              <div className="relative z-10 flex flex-col items-end mt-auto">
+                <h3 className="text-white font-black leading-tight text-right mb-3" style={{fontSize: 'clamp(1.8rem, 3vw, 2.5rem)'}}>
+                  {pkg.title}
+                </h3>
+                <p className="text-gray-400 text-xs text-right max-w-xs leading-relaxed mb-6">
+                  {pkg.desc}
+                </p>
+                <div className="flex items-center justify-between w-full border-t pt-4" style={{borderColor: 'rgba(255,255,255,0.08)'}}>
+                  <button
+                    className="text-xs font-bold transition-colors"
+                    style={{color: 'rgba(150, 215, 78, 1)'}}
+                  >
+                    اكتشف التجربة
+                  </button>
+                  <span className="text-gray-600 text-xs tracking-widest">RELAX HEAL</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Section 3 - Dark CTA + Footer */}
+      <section className="bg-black px-8 md:px-16 py-24 flex flex-col md:flex-row items-center justify-between gap-12">
+          {/* Left - Text */}
+        <div className="flex flex-col items-start text-left max-w-xl">
+          <h2 className="text-white font-black leading-tight" style={{fontSize: 'clamp(2rem, 4vw, 3.5rem)'}}>
+            من التهيئة إلى الاستشفاء، تبدأ التجربة
+          </h2>
+          <h2 className="font-black leading-tight" style={{fontSize: 'clamp(2rem, 4vw, 3.5rem)', color: 'rgba(150, 215, 78, 1)'}}>
+            بفهم احتياجك واختيار ما يناسب حركة جسمك.
+          </h2>
+        </div>
+
+        {/* Right - Button */}
+        <div className="flex-shrink-0">
+          <button
+            className="flex items-center gap-3 rounded-full px-5 py-2"
+            style={{backgroundColor: 'rgba(150, 215, 78, 1)'}}
+          >
+            <div className="w-8 h-8 rounded-full bg-black flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" style={{color: 'rgba(150, 215, 78, 1)'}} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <span className="text-black text-sm font-bold pl-2">تعرّف على خطوات تجربتك</span>
+          </button>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-black" dir="rtl">
+        <div className="border-t" style={{borderColor: 'rgba(255,255,255,0.08)'}}>
+          <div className="flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-10 gap-8">
+            <div className="flex flex-col items-start gap-3">
+              <img src="/imag/loge.png" alt="Relax Heal Logo" className="h-10 object-contain" />
+              <p className="text-gray-400 text-xs text-left max-w-[180px]">
+                استشفاء رياضي واسترخاء داخل الأندية الرياضية.
+              </p>
+            </div>
+            <div className="flex gap-16 text-sm">
+              <div className="flex flex-col text-right">
+                <a href="/" className="text-white hover:text-green-400 transition-colors py-3 border-t" style={{borderColor: 'rgba(255,255,255,0.15)'}}>الرئيسية</a>
+                <a href="/packages" className="text-white hover:text-green-400 transition-colors py-3 border-t border-b" style={{borderColor: 'rgba(255,255,255,0.15)'}}>الباقات</a>
+              </div>
+              <div className="flex flex-col text-right">
+                <a href="#" className="text-white hover:text-green-400 transition-colors py-3 border-t" style={{borderColor: 'rgba(255,255,255,0.15)'}}>العلاجات</a>
+                <a href="/experience" className="text-white hover:text-green-400 transition-colors py-3 border-t" style={{borderColor: 'rgba(255,255,255,0.15)'}}>التجربة</a>
+                <a href="#" className="text-white hover:text-green-400 transition-colors py-3 border-t border-b" style={{borderColor: 'rgba(255,255,255,0.15)'}}>عن ريلاكس هيل</a>
+              </div>
+            </div>
+            <div
+              className="w-24 h-24 rounded-full border-2 flex flex-col items-center justify-center flex-shrink-0"
+              style={{borderColor: 'rgba(150, 215, 78, 0.4)'}}
+            >
+              <span className="text-white text-[9px] font-bold tracking-widest uppercase text-center leading-tight">
+                RECOVERY<br/>IN MOTION
+              </span>
+            </div>
+          </div>
+          <div
+            className="flex items-center justify-between px-8 md:px-16 py-4 border-t"
+            style={{borderColor: 'rgba(255,255,255,0.08)'}}
+          >
+            <span className="text-gray-600 text-xs uppercase tracking-widest">RELAX HEAL / 2026</span>
+            <a href="#" className="text-gray-600 text-xs hover:text-white transition-colors">تصميم، استشاري ربع أفق</a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  )
+}
