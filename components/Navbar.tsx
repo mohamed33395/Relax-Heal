@@ -25,10 +25,10 @@ export default function Navbar() {
         {/* Center - Links (hidden on mobile) */}
         <div className="hidden md:flex items-center space-x-8">
           <a href="#" className="text-white hover:text-gray-300 transition-colors">جوهرنا</a>
-          <a href="#" className="text-white hover:text-gray-300 transition-colors">زيارتك</a>
+          <a href="/experience" className="text-white hover:text-gray-300 transition-colors">التجربة</a>
           <a href="#" className="text-white hover:text-gray-300 transition-colors">عن ريلاكس هيل</a>
           <a href="#" className="text-white hover:text-gray-300 transition-colors">العلاجات</a>
-          <a href="#" className="text-white hover:text-gray-300 transition-colors">الرئيسية</a>
+          <a href="/" className="text-white hover:text-gray-300 transition-colors">الرئيسية</a>
         </div>
 
         {/* Mobile menu button */}
@@ -53,10 +53,10 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden bg-black/95 border-t border-gray-800">
           <div className="flex flex-col items-center py-4 space-y-4">
-            <a href="#" className="text-white hover:text-gray-300 transition-colors">الرئيسية</a>
+            <a href="/" className="text-white hover:text-gray-300 transition-colors">الرئيسية</a>
             <a href="#" className="text-white hover:text-gray-300 transition-colors">العلاجات</a>
             <a href="#" className="text-white hover:text-gray-300 transition-colors">عن ريلاكس هيل</a>
-            <a href="#" className="text-white hover:text-gray-300 transition-colors">زيارتك</a>
+            <a href="/experience" className="text-white hover:text-gray-300 transition-colors">التجربة</a>
             <a href="#" className="text-white hover:text-gray-300 transition-colors">جوهرنا</a>
             <Button icon={
               <div className="flex items-center justify-center w-8 h-8 rounded-full" style={{ backgroundColor: 'rgba(150, 215, 78, 1)' }}>
