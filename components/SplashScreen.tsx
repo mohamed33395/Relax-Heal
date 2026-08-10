@@ -53,7 +53,7 @@ export default function SplashScreen({ onComplete, duration = 4000 }: SplashScre
 
         {/* RELAX HEAL text */}
         <h1 className="text-white text-7xl font-bold tracking-wider mb-2 text-center">
-          RELAX HEAL
+            RELAX HEAL
         </h1>
 
         {/* Dashed blue line below RELAX HEAL */}
