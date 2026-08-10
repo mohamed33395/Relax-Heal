@@ -27,7 +27,7 @@ export default function Navbar() {
           <a href="/packages" className="text-white hover:text-gray-300 transition-colors">الباقات</a>
           <a href="/experience" className="text-white hover:text-gray-300 transition-colors">التجربة</a>
           <a href="#" className="text-white hover:text-gray-300 transition-colors">عن ريلاكس هيل</a>
-          <a href="#" className="text-white hover:text-gray-300 transition-colors">العلاجات</a>
+          <a href="/treatments" className="text-white hover:text-gray-300 transition-colors">العلاجات</a>
           <a href="/" className="text-white hover:text-gray-300 transition-colors">الرئيسية</a>
         </div>
 
@@ -54,7 +54,7 @@ export default function Navbar() {
         <div className="md:hidden bg-black/95 border-t border-gray-800">
           <div className="flex flex-col items-center py-4 space-y-4">
             <a href="/" className="text-white hover:text-gray-300 transition-colors">الرئيسية</a>
-            <a href="#" className="text-white hover:text-gray-300 transition-colors">العلاجات</a>
+            <a href="/treatments" className="text-white hover:text-gray-300 transition-colors">العلاجات</a>
             <a href="#" className="text-white hover:text-gray-300 transition-colors">عن ريلاكس هيل</a>
             <a href="/experience" className="text-white hover:text-gray-300 transition-colors">التجربة</a>
             <a href="/packages" className="text-white hover:text-gray-300 transition-colors">الباقات</a>
