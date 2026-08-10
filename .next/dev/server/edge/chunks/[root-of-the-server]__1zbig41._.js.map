@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/El%20mostafa/WebstormProjects/Relax_heal/middleware.ts"],"sourcesContent":["import { NextResponse } from 'next/server'\nimport type { NextRequest } from 'next/server'\n\nexport function middleware(request: NextRequest) {\n  return NextResponse.next()\n}"],"names":["middleware","request","next"],"mappings":";;;;AAAA;AAAA;;AAGO,SAASA,WAAWC,OAAoB;IAC7C,OAAO,6MAAY,CAACC,IAAI;AAC1B"}}]
+}
