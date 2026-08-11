@@ -249,6 +249,8 @@ export default function TreatmentsPage() {
                 style={{ minHeight: '220px', backgroundColor: 'rgba(0,0,0,0.6)', borderColor: 'rgba(255,255,255,0.02)' }}
                 onMouseEnter={e => (e.currentTarget.style.borderColor = 'rgba(150, 215, 78, 0.4)')}
                 onMouseLeave={e => (e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)')}
+                onTouchStart={e => (e.currentTarget.style.borderColor = 'rgba(150, 215, 78, 0.4)')}
+                onTouchEnd={e => (e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)')}
               >
                 <img
                   src={d.image}

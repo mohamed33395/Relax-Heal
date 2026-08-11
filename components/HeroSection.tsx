@@ -4,9 +4,9 @@ import Button from './Button'
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen relative" style={{backgroundColor: 'hsla(60, 16%, 94%, 1)'}}>
+    <section className="min-h-screen relative overflow-hidden" style={{backgroundColor: 'hsla(60, 16%, 94%, 1)'}}>
       {/* Main content */}
-      <div className="relative w-full px-4 md:px-8 lg:px-16 py-12 flex flex-col justify-between min-h-screen">
+      <div className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 py-12 flex flex-col justify-between min-h-screen">
         
         {/* Top row with line */}
         <div className="flex items-center justify-start w-full pt-12 pb-4 border-b border-black">

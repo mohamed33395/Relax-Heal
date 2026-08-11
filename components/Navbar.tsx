@@ -9,18 +9,8 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-black/80 backdrop-blur-md z-40 border-b border-gray-800">
       <div className="w-full py-4 flex items-center justify-between px-4 md:px-6">
-        {/* Left side - Button (hidden on mobile) */}
-        <div className="hidden md:block">
-          <Button icon={
-            <div className="flex items-center justify-center w-8 h-8 rounded-full" style={{ backgroundColor: 'rgba(150, 215, 78, 1)' }}>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-black" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M9.707 3.293a1 1 0 010 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 01-1.414 1.414l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 0z" clipRule="evenodd" />
-              </svg>
-            </div>
-          }>
-              ابدأ تجربتك
-          </Button>
-        </div>
+        {/* Left side - Logo */}
+        <img src="/imag/loge.png" alt="Logo" className="h-10 md:h-12 w-auto" />
 
         {/* Center - Links (hidden on mobile) */}
         <div className="hidden md:flex items-center space-x-8">
@@ -45,8 +35,18 @@ export default function Navbar() {
           </svg>
         </button>
 
-        {/* Right side - Logo */}
-        <img src="/imag/loge.png" alt="Logo" className="h-10 md:h-12 w-auto" />
+        {/* Right side - Button (hidden on mobile) */}
+        <div className="hidden md:block">
+          <Button icon={
+            <div className="flex items-center justify-center w-8 h-8 rounded-full" style={{ backgroundColor: 'rgba(150, 215, 78, 1)' }}>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-black" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M9.707 3.293a1 1 0 010 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 01-1.414 1.414l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 0z" clipRule="evenodd" />
+              </svg>
+            </div>
+          }>
+              ابدأ تجربتك
+          </Button>
+        </div>
       </div>
 
       {/* Mobile menu */}

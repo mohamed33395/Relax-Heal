@@ -35,7 +35,8 @@ export default function FooterSection() {
 
       {/* Footer Links */}
       <div className="border-t" style={{borderColor: 'rgba(255,255,255,0.08)'}}>
-        <div className="flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-10 gap-8">
+        <div className="max-w-screen-xl mx-auto px-8 md:px-16">
+          <div className="flex flex-col md:flex-row items-center justify-between py-10 gap-8">
 
           {/* Left - Logo + tagline */}
           <div className="flex flex-col items-start gap-3">
@@ -71,12 +72,10 @@ export default function FooterSection() {
         </div>
 
         {/* Bottom bar */}
-        <div
-          className="flex items-center justify-between px-8 md:px-16 py-4 border-t"
-          style={{borderColor: 'rgba(255,255,255,0.08)'}}
-        >
+        <div className="flex items-center justify-between py-4 border-t" style={{borderColor: 'rgba(255,255,255,0.08)'}}>
           <span className="text-gray-600 text-xs uppercase tracking-widest">RELAX HEAL / 2026</span>
           <a href="#" className="text-gray-600 text-xs hover:text-white transition-colors">تصميم، استشاري ربع أفق</a>
+        </div>
         </div>
       </div>
     </footer>

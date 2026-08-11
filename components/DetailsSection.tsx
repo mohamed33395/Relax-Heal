@@ -9,7 +9,8 @@ export default function DetailsSection() {
   ]
 
   return (
-    <section className="min-h-screen bg-black relative overflow-hidden flex flex-col md:flex-row">
+    <section className="min-h-screen bg-black relative overflow-hidden">
+      <div className="max-w-screen-xl mx-auto w-full flex flex-col md:flex-row min-h-screen relative z-10">
       {/* Left - Content */}
       <div className="w-full md:w-1/2 flex flex-col justify-center items-center px-8 md:px-16 py-16">
         <div className="flex items-center gap-2 mb-6">
@@ -58,6 +59,7 @@ export default function DetailsSection() {
             </button>
           </div>
         </div>
+      </div>
       </div>
     </section>
   )

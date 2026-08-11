@@ -22,17 +22,26 @@ export default function Home() {
     }
 
     return (
-        <div className="min-h-screen bg-black" dir="rtl">
-        <div className="max-w-screen-xl mx-auto w-full overflow-hidden">
+        <div className="min-h-screen" style={{backgroundColor: 'hsl(60, 8%, 88%)'}} dir="rtl">
+        <div className="w-full">
             {/* Hero Section */}
-            <section className="relative min-h-screen flex flex-col pt-20 px-4 md:px-8 lg:px-16 overflow-hidden">
+            <section className="relative h-[95vh] overflow-hidden">
+                {/* Background Image */}
+                <img
+                    src="/imag/BEFORE TRAINING.png"
+                    alt=""
+                    className="absolute inset-0 w-full h-full object-cover opacity-30"
+                />
+                <div className="absolute inset-0" style={{background: 'linear-gradient(to right, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.75) 15%, rgba(0,0,0,0.75) 85%, rgba(0,0,0,0.95) 100%)'}}></div>
 
+                <div className="max-w-screen-xl mx-auto w-full px-4 md:px-8 lg:px-16 pt-20 flex flex-col h-full relative z-10">
                 {/* Top row: left label | right label */}
                 <div className="flex items-center justify-between w-full py-4 text-xs tracking-widest uppercase">
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center mt-10 gap-2">
+                         <span className="w-2 h-2 rounded-full"
+                               style={{backgroundColor: 'rgba(150, 215, 78, 1)'}}></span>
                         <span className="text-white text-xs">استشفاء مصمم للحركة</span>
-                        <span className="w-2 h-2 rounded-full"
-                              style={{backgroundColor: 'rgba(150, 215, 78, 1)'}}></span>
+
                     </div>
                     <span className="text-gray-500">EXPERIENCE THE HEALING POWER OF TOUCH</span>
                 </div>
@@ -44,15 +53,15 @@ export default function Home() {
 
                     {/* Three h1 headings */}
                     <h1 className="text-white font-black leading-none text-right mb-3"
-                        style={{fontSize: 'clamp(4rem, 5vw, 6rem)'}}>
+                        style={{fontSize: 'clamp(5rem, 8vw, 7rem)'}}>
                         استعد
                     </h1>
                     <h1 className="font-black leading-none text-right mb-3"
-                        style={{fontSize: 'clamp(4rem, 5vw, 6rem)', color: 'rgba(150, 215, 78, 1)'}}>
+                        style={{fontSize: 'clamp(5rem, 8vw, 7rem)', color: 'rgba(150, 215, 78, 1)'}}>
                         استشف
                     </h1>
                     <h1 className="text-white font-black leading-none text-right mb-2"
-                        style={{fontSize: 'clamp(4rem, 5vw, 6rem)'}}>
+                        style={{fontSize: 'clamp(5rem, 8vw, 7rem)'}}>
                         وانطلق.
                     </h1>
 
@@ -105,21 +114,28 @@ export default function Home() {
                     </Button>
 
                 </div>
+                </div>
 
             </section>
 
             {/* Scrolling Marquee Banner */}
-            <div className="w-full overflow-hidden  py-3" style={{backgroundColor: 'rgba(150, 215, 78, 1)'}}>
-                <div className="flex animate-marquee whitespace-nowrap">
-                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">Sports Recovery</span>
-                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">Therapeutic Touch</span>
-                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">Deep Rest</span>
-                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">Sports Recovery</span>
-                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">Therapeutic Touch</span>
-                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">Deep Rest</span>
-                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">Sports Recovery</span>
-                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">Therapeutic Touch</span>
-                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">Deep Rest</span>
+            <div className="w-full overflow-hidden py-3" style={{backgroundColor: 'rgba(150, 215, 78, 1)'}}>
+                <div className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16">
+                    <div className="flex animate-marquee whitespace-nowrap w-max">
+                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">DEEP REST</span>
+                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">THERAPEUTIC TOUCH</span>
+                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">SPORTS RECOVERY</span>
+                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">DEEP REST</span>
+                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">THERAPEUTIC TOUCH</span>
+                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">SPORTS RECOVERY</span>
+                    {/* Duplicate for seamless loop */}
+                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">DEEP REST</span>
+                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">THERAPEUTIC TOUCH</span>
+                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">SPORTS RECOVERY</span>
+                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">DEEP REST</span>
+                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">THERAPEUTIC TOUCH</span>
+                    <span className="mx-8 text-white text-sm uppercase font-bold tracking-wider">SPORTS RECOVERY</span>
+                    </div>
                 </div>
             </div>
 
