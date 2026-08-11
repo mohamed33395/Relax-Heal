@@ -67,7 +67,8 @@ export default function TreatmentSelectorSection() {
   const displayTitle = hoverSource === 'steps' ? active.title : activeRoute.title
 
   return (
-    <section className="min-h-screen bg-black relative overflow-hidden px-4 md:px-8 lg:px-16 py-12">
+    <section className="h-[70vh] bg-black relative overflow-hidden py-12">
+      <div className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 relative">
       {/* Background watermark text */}
       <div className="absolute top-0 right-0 pointer-events-none select-none">
         <h1
@@ -124,6 +125,7 @@ export default function TreatmentSelectorSection() {
                 <li
                   key={step.number}
                   onMouseEnter={() => { setActiveIndex(index); setHoverSource('steps') }}
+                  onTouchStart={() => { setActiveIndex(index); setHoverSource('steps') }}
                   className="flex items-center justify-between py-2 border-b cursor-pointer"
                   style={{borderColor: 'rgba(255,255,255,0.08)'}}
                 >
@@ -173,6 +175,7 @@ export default function TreatmentSelectorSection() {
                 <li
                   key={route.number}
                   onMouseEnter={() => { setActiveRouteIndex(index); setHoverSource('routes') }}
+                  onTouchStart={() => { setActiveRouteIndex(index); setHoverSource('routes') }}
                   className="flex items-center justify-between py-4 px-4 rounded cursor-pointer"
                   style={isRouteActive ? {backgroundColor: 'rgba(150, 215, 78, 0.1)', border: '1px solid rgba(150, 215, 78, 0.4)'} : {}}
                 >
@@ -194,6 +197,7 @@ export default function TreatmentSelectorSection() {
             })}
           </ul>
         </div>
+      </div>
       </div>
     </section>
   )

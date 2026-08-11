@@ -6,7 +6,7 @@ export default function AboutPage() {
 
       {/* Section 1 - Hero */}
       <section
-        className="relative w-screen -mx-[calc((100vw-100%)/2)] min-h-screen flex flex-col justify-between overflow-hidden"
+        className="relative w-screen -mx-[calc((100vw-100%)/2)] min-h-[80vh] flex flex-col justify-between overflow-hidden"
         style={{ background: '#0d1a0a' }}
       >
         <img
@@ -161,6 +161,8 @@ export default function AboutPage() {
               style={{ minHeight: '200px', borderColor: 'rgba(0,0,0,0.12)', backgroundColor: 'rgba(255,255,255,0.6)' }}
               onMouseEnter={e => { e.currentTarget.style.backgroundColor = '#000'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)'; e.currentTarget.querySelectorAll('.card-title').forEach(el => (el as HTMLElement).style.color = '#fff'); e.currentTarget.querySelectorAll('.card-desc').forEach(el => (el as HTMLElement).style.color = 'rgba(255,255,255,0.6)'); }}
               onMouseLeave={e => { e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.6)'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.12)'; e.currentTarget.querySelectorAll('.card-title').forEach(el => (el as HTMLElement).style.color = '#000'); e.currentTarget.querySelectorAll('.card-desc').forEach(el => (el as HTMLElement).style.color = 'rgb(107,114,128)'); }}
+              onTouchStart={e => { e.currentTarget.style.backgroundColor = '#000'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)'; e.currentTarget.querySelectorAll('.card-title').forEach(el => (el as HTMLElement).style.color = '#fff'); e.currentTarget.querySelectorAll('.card-desc').forEach(el => (el as HTMLElement).style.color = 'rgba(255,255,255,0.6)'); }}
+              onTouchEnd={e => { e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.6)'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.12)'; e.currentTarget.querySelectorAll('.card-title').forEach(el => (el as HTMLElement).style.color = '#000'); e.currentTarget.querySelectorAll('.card-desc').forEach(el => (el as HTMLElement).style.color = 'rgb(107,114,128)'); }}
             >
               <div className="flex justify-between items-start">
                 <div className="w-8 h-8 rounded-full border" style={{ borderColor: 'rgba(0,0,0,0.2)' }} />
@@ -310,6 +312,8 @@ export default function AboutPage() {
             style={{ border: '1px solid rgba(150,215,78,0.5)', color: 'rgba(150, 215, 78, 1)' }}
             onMouseEnter={e => ((e.currentTarget as HTMLElement).style.backgroundColor = 'rgba(150,215,78,0.1)')}
             onMouseLeave={e => ((e.currentTarget as HTMLElement).style.backgroundColor = 'transparent')}
+            onTouchStart={e => ((e.currentTarget as HTMLElement).style.backgroundColor = 'rgba(150,215,78,0.1)')}
+            onTouchEnd={e => ((e.currentTarget as HTMLElement).style.backgroundColor = 'transparent')}
           >
             <span className="w-5 h-5 rounded-full flex items-center justify-center" style={{ backgroundColor: 'rgba(150, 215, 78, 1)' }}>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">

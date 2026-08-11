@@ -2,7 +2,8 @@
 
 export default function RecoverySection() {
   return (
-    <section className="min-h-screen relative overflow-hidden px-4 md:px-8 lg:px-16 py-12" style={{backgroundColor: 'hsla(60, 16%, 94%, 1)'}}>
+    <section className="min-h-screen relative overflow-hidden py-12" style={{backgroundColor: 'hsla(60, 16%, 94%, 1)'}}>
+      <div className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 h-full">
       {/* Header */}
       <div className="mb-12 flex items-start justify-between">
         <div className="flex flex-col">
@@ -24,11 +25,11 @@ export default function RecoverySection() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         
         {/* Card 1 - Large */}
-        <div className="relative rounded-lg overflow-hidden shadow-lg h-96 md:col-span-2">
+        <div className="group relative rounded-lg overflow-hidden shadow-lg h-64 md:col-span-2">
           <img 
             src="/imag/BEFORE TRAINING.png" 
             alt="Sports Massage" 
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110 active:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
           <div className="absolute top-4 right-4 text-sm font-black" style={{color: 'rgba(150, 215, 78, 1)'}}>
@@ -51,11 +52,11 @@ export default function RecoverySection() {
         </div>
 
         {/* Card 2 - Small */}
-        <div className="relative rounded-lg overflow-hidden shadow-lg h-96">
+        <div className="group relative rounded-lg overflow-hidden shadow-lg h-64">
           <img 
             src="/imag/THERAPEUTIC TOUCH.png" 
             alt="Therapeutic Massage" 
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110 active:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
           <div className="absolute top-4 right-4 text-sm font-black" style={{color: 'rgba(150, 215, 78, 1)'}}>
@@ -78,11 +79,11 @@ export default function RecoverySection() {
         </div>
 
         {/* Card 3 - Small */}
-        <div className="relative rounded-lg overflow-hidden shadow-lg h-96">
+        <div className="group relative rounded-lg overflow-hidden shadow-lg h-64">
           <img 
             src="/imag/AFTER TRAINING.png" 
             alt="Body Contouring" 
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110 active:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
           <div className="absolute top-4 right-4 text-sm font-black" style={{color: 'rgba(150, 215, 78, 1)'}}>
@@ -105,11 +106,11 @@ export default function RecoverySection() {
         </div>
 
         {/* Card 4 - Large */}
-        <div className="relative rounded-lg overflow-hidden shadow-lg h-96 md:col-span-2">
+        <div className="group relative rounded-lg overflow-hidden shadow-lg h-64 md:col-span-2">
           <img 
             src="/imag/BEFORE TRAINING.png" 
             alt="Relaxation Massage" 
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110 active:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
           <div className="absolute top-4 right-4 text-sm font-black" style={{color: 'rgba(150, 215, 78, 1)'}}>
@@ -130,6 +131,7 @@ export default function RecoverySection() {
             </a>
           </div>
         </div>
+      </div>
       </div>
     </section>
   )

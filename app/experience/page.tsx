@@ -129,6 +129,8 @@ export default function ExperiencePage() {
               style={{minHeight: '180px'}}
               onMouseEnter={e => (e.currentTarget.style.backgroundColor = 'rgba(150, 215, 78, 0.12)')}
               onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
+              onTouchStart={e => (e.currentTarget.style.backgroundColor = 'rgba(150, 215, 78, 0.12)')}
+              onTouchEnd={e => (e.currentTarget.style.backgroundColor = 'transparent')}
             >
               <div className="flex justify-between items-start">
                 <div className="w-8 h-8 rounded-full border border-gray-600" />

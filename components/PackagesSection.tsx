@@ -29,7 +29,8 @@ export default function PackagesSection() {
   ]
 
   return (
-    <section className="min-h-screen relative overflow-hidden px-4 md:px-8 lg:px-16 py-12" style={{backgroundColor: 'hsla(60, 16%, 94%, 1)'}}>
+    <section className="min-h-screen relative overflow-hidden py-12" style={{backgroundColor: 'hsla(60, 16%, 94%, 1)'}}>
+      <div className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16">
       {/* Header */}
       <div className="flex items-start justify-between mb-8">
         <a href="#" className="flex items-center gap-2 text-sm font-bold text-black hover:opacity-70 transition-opacity">
@@ -65,6 +66,7 @@ export default function PackagesSection() {
             </p>
           </div>
         ))}
+      </div>
       </div>
     </section>
   )
